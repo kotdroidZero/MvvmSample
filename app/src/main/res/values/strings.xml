@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SampleMvvm</string>
+    <string name="no_internet">Check your internet</string>
+    <string name="retrofit_failure">Failure !</string>
+</resources>
