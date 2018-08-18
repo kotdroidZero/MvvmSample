@@ -23,7 +23,7 @@ allprojects {
 }
 ext {
     configuration = [
-            packageName      : "com.uber.partner",
+            packageName      : "com.kotdroid.samplemvvm",
             compileSdkVersion: 27,
             targetSdkVersion : 27,
             minSdkVersion    : 21,

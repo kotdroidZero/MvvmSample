@@ -32,7 +32,7 @@ object RestClient {
                 .build()
 
         retrofitInstance = Retrofit.Builder()
-                .baseUrl(WebConstants.ACTION_BASE_URL_FOR_APIS)
+                .baseUrl("google.com")
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .client(okHttpClient)

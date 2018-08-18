@@ -2,4 +2,15 @@
     <string name="app_name">SampleMvvm</string>
     <string name="no_internet">Check your internet</string>
     <string name="retrofit_failure">Failure !</string>
+    <string name="geofence_transition_notification_text">You are under survelliance</string>
+    <string name="geofence_transition_invalid_type">invalid type</string>
+    <string name="geofence_transition_entered">You have entered in your office</string>
+    <string name="geofence_transition_exited">thanks for visit !</string>
+    <string name="unknown_geofence_transition">unknown area</string>
+
+    <string name="location_permission_needed">You need to grant location  permission in order to use the app features.</string>
+    <string name="enable_location_permission">You should enable your location permission         in the settings for better experience.</string>
+    <string name="ok">OK</string>
+    <string name="action_okay">Okay</string>
+    <string name="cancel">Cancel</string>
 </resources>

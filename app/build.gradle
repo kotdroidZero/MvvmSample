@@ -31,19 +31,16 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-
-
     implementation("com.facebook.fresco:fresco:${libraries.fresco}") {
         exclude module: 'support-v4'
     }
-
     implementation "com.squareup.retrofit2:retrofit:${libraries.retrofit}"
     implementation "com.squareup.retrofit2:${libraries.retrofitConvertor}"
     implementation "com.squareup.retrofit2:adapter-rxjava2:${libraries.retrofitAdapter}"
@@ -51,10 +48,8 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxandroid:${libraries.rxAndroid}"
     implementation "com.squareup.okhttp3:logging-interceptor:${libraries.okHttpLoginInterceptor}"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-
     implementation "android.arch.lifecycle:extensions:${libraries.architectureComponentsVersion}"
     implementation "android.arch.lifecycle:common-java8:${libraries.architectureComponentsVersion}"
     implementation "com.android.support:appcompat-v7:${libraries.supportLibVersion}"
-
-
+    implementation "com.google.android.gms:play-services-location:${libraries.googleServicesVersion}"
 }
